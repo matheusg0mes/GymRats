@@ -13,7 +13,6 @@ public class GlobalHandleeExceptinos extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(CustomExceptions.class)
     public ResponseEntity<RecordExceptions> handleNotFund(CustomExceptions ex , WebRequest request){
-
         RecordExceptions response = new RecordExceptions(
              new Date(),
                 ex.getMessage(),

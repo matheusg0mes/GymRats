@@ -13,18 +13,21 @@ public class Aluno {
 
     @Column(name = "nome", length = 45,nullable = false)
     private String nome;
+
     @Column(name = "email", length = 45,nullable = false)
     private String email;
+
     @Column(name = "telefone", length = 45, nullable = false)
     private String telefone;
+
     @Column(name = "ativo")
     private Boolean ativo;
 
-    public Integer getId() {
+    public Integer getIdAluno() {
         return  idaluno;
     }
 
-    public void setId(Integer id) {
+    public void setIdAluno(Integer id) {
         this. idaluno = id;
     }
 

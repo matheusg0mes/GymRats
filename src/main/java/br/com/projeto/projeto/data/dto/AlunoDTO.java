@@ -1,22 +1,19 @@
 package br.com.projeto.projeto.data.dto;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class AlunoDTO {
 
-    private Integer  idaluno;
+    private Integer  id;
     private String nome;
     private Boolean ativo;
 
     public Integer getId() {
-        return  idaluno;
+        return  id;
     }
 
     public void setId(Integer id) {
-        this. idaluno = id;
+        this. id = id;
     }
 
     public String getNome() {
