@@ -1,7 +1,6 @@
 package br.com.projeto.projeto.controller;
 
-import br.com.projeto.projeto.data.dto.AlunoDTO;
-import br.com.projeto.projeto.model.Aluno;
+import br.com.projeto.projeto.dto.AlunoDTO;
 import br.com.projeto.projeto.service.aluno.IAlunoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

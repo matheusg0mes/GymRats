@@ -1,6 +1,6 @@
 package br.com.projeto.projeto.service.aluno;
 
-import br.com.projeto.projeto.data.dto.AlunoDTO;
+import br.com.projeto.projeto.dto.AlunoDTO;
 import br.com.projeto.projeto.exceptions.CustomExceptions;
 import br.com.projeto.projeto.mapper.AlunoMapper;
 import br.com.projeto.projeto.model.Aluno;

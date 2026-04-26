@@ -1,7 +1,6 @@
 package br.com.projeto.projeto.service.aluno;
 
-import br.com.projeto.projeto.data.dto.AlunoDTO;
-import br.com.projeto.projeto.model.Aluno;
+import br.com.projeto.projeto.dto.AlunoDTO;
 
 import java.util.List;
 

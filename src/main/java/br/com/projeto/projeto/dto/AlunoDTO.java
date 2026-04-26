@@ -1,4 +1,4 @@
-package br.com.projeto.projeto.data.dto;
+package br.com.projeto.projeto.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
