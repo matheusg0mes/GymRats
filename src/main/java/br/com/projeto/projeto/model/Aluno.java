@@ -3,6 +3,8 @@ package br.com.projeto.projeto.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "aluno")
 public class Aluno {
@@ -22,6 +24,9 @@ public class Aluno {
 
     @Column(name = "ativo")
     private Boolean ativo;
+
+    @OneToMany(mappedBy = "aluno")
+    private List<Matricula> matricula;
 
     public Integer getIdAluno() {
         return  idaluno;
