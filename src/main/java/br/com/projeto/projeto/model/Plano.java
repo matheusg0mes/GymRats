@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="plano")
+@Table(name = "plano")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -16,13 +16,13 @@ public class Plano {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idplano;
 
-    @Column(name="nome", length = 45, nullable = false)
+    @Column(name = "nome", length = 45, nullable = false)
     private String nome;
 
-    @Column(name="valor", nullable = false)
+    @Column(name = "valor", nullable = false)
     private Double preco;
 
-    @Column(name="descricao",length = 100)
+    @Column(name = "descricao", length = 100)
     private String descricao;
 
 }

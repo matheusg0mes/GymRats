@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="professor")
+@Table(name = "professor")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -16,13 +16,13 @@ public class Professor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idprofessor;
 
-    @Column(name="nome", length = 45,nullable = false)
+    @Column(name = "nome", length = 45, nullable = false)
     private String nome;
 
-    @Column(name="email", length = 45,nullable = false, unique = true)
+    @Column(name = "email", length = 45, nullable = false, unique = true)
     private String email;
 
-    @Column(name="especializacao", length = 45,nullable = false)
+    @Column(name = "especializacao", length = 45, nullable = false)
     private String especializacao;
 
 }

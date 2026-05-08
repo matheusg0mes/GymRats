@@ -9,7 +9,7 @@ import lombok.Setter;
 import java.time.LocalDate;
 
 @Entity
-@Table(name="pagamento")
+@Table(name = "pagamento")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -19,7 +19,7 @@ public class Pagamento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idpagamento;
 
-    @Column(name="valor", nullable = false)
+    @Column(name = "valor", nullable = false)
     private Double valor;
 
     @Column(name = "data_pagar", nullable = false)

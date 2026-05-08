@@ -8,6 +8,8 @@ import java.util.List;
 public interface IAlunoService {
 
     public List<AlunoResponseDTO> retornaTudo();
+
     public AlunoResponseDTO retornaPorId(Integer id);
+
     public AlunoResponseDTO cadastrarAluno(AlunoRequestDTO aluno);
 }

@@ -16,13 +16,13 @@ import java.util.List;
 public class Aluno {
 
     @Id
-    @GeneratedValue( strategy = GenerationType.IDENTITY)
-    private Integer  idaluno;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer idaluno;
 
-    @Column(name = "nome", length = 45,nullable = false)
+    @Column(name = "nome", length = 45, nullable = false)
     private String nome;
 
-    @Column(name = "email", length = 45,nullable = false)
+    @Column(name = "email", length = 45, nullable = false)
     private String email;
 
     @Column(name = "telefone", length = 45, nullable = false)

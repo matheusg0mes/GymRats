@@ -10,7 +10,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Entity
-@Table(name="matricula")
+@Table(name = "matricula")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -20,19 +20,19 @@ public class Matricula {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idmatricula;
 
-    @Column(name = "status",nullable = false)
+    @Column(name = "status", nullable = false)
     @Enumerated(EnumType.STRING)
     private StatusMatricula statusMatricula;
 
-    @Column(name="dataInicio")
+    @Column(name = "dataInicio")
     private LocalDate data;
 
     @ManyToOne
-    @JoinColumn(name= "aluno_idaluno")
+    @JoinColumn(name = "aluno_idaluno")
     private Aluno aluno;
 
     @ManyToOne
-    @JoinColumn(name ="plano_idplano")
+    @JoinColumn(name = "plano_idplano")
     private Plano plano;
 
     @OneToMany(mappedBy = "matricula")
