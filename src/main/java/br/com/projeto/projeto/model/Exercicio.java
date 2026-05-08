@@ -1,14 +1,20 @@
 package br.com.projeto.projeto.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name="exercicio")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Exercicio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer idexercicio;
 
     @Column(name="nome", nullable = false,length = 45)
     private String nome;
@@ -22,43 +28,5 @@ public class Exercicio {
     @Column(name="repeticao", nullable = false,length = 45)
     private String repeticao;
 
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public String getSerie() {
-        return serie;
-    }
-
-    public void setSerie(String serie) {
-        this.serie = serie;
-    }
-
-    public String getRepeticao() {
-        return repeticao;
-    }
-
-    public void setRepeticao(String repeticao) {
-        this.repeticao = repeticao;
-    }
 }

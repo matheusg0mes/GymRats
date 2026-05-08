@@ -1,14 +1,20 @@
 package br.com.projeto.projeto.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Treino {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer idtreino;
 
     @Column(name = "nome", nullable = false, length = 45)
     private String nome;
@@ -24,43 +30,4 @@ public class Treino {
     @JoinColumn(name = "exercicio_idexercicio")
     private Exercicio exercicio;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public Integer getNivel() {
-        return nivel;
-    }
-
-    public void setNivel(Integer nivel) {
-        this.nivel = nivel;
-    }
-
-    public Professor getProfessor() {
-        return professor;
-    }
-
-    public void setProfessor(Professor professor) {
-        this.professor = professor;
-    }
-
-    public Exercicio getExercicio() {
-        return exercicio;
-    }
-
-    public void setExercicio(Exercicio exercicio) {
-        this.exercicio = exercicio;
-    }
 }

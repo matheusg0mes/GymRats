@@ -2,11 +2,17 @@ package br.com.projeto.projeto.model;
 
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.List;
 
 @Entity
 @Table(name = "aluno")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Aluno {
 
     @Id
@@ -28,43 +34,4 @@ public class Aluno {
     @OneToMany(mappedBy = "aluno")
     private List<Matricula> matricula;
 
-    public Integer getIdAluno() {
-        return  idaluno;
-    }
-
-    public void setIdAluno(Integer id) {
-        this. idaluno = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public Boolean getAtivo() {
-        return ativo;
-    }
-
-    public void setAtivo(Boolean ativo) {
-        this.ativo = ativo;
-    }
 }

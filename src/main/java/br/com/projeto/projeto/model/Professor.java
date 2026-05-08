@@ -1,14 +1,20 @@
 package br.com.projeto.projeto.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name="professor")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Professor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer idprofessor;
 
     @Column(name="nome", length = 45,nullable = false)
     private String nome;
@@ -19,35 +25,4 @@ public class Professor {
     @Column(name="especializacao", length = 45,nullable = false)
     private String especializacao;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getEspecializacao() {
-        return especializacao;
-    }
-
-    public void setEspecializacao(String especializacao) {
-        this.especializacao = especializacao;
-    }
 }
