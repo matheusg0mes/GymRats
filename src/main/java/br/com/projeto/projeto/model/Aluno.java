@@ -22,7 +22,7 @@ public class Aluno {
     @Column(name = "nome", length = 45, nullable = false)
     private String nome;
 
-    @Column(name = "email", length = 45, nullable = false)
+    @Column(name = "email", length = 45, nullable = false, unique = true)
     private String email;
 
     @Column(name = "telefone", length = 45, nullable = false)
