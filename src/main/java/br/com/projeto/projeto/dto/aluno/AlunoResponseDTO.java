@@ -10,7 +10,9 @@ import lombok.Setter;
 public class AlunoResponseDTO {
 
     private String nome;
-    private Boolean ativo;
 
+    private String email;
+
+    private Boolean ativo;
 
 }
