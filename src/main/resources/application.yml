@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/mydb?useSSL=true&serverTimezone=UTC
-    username: root
-    password: 9645airom
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSOWRD}
 
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
